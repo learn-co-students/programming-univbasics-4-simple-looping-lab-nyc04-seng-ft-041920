@@ -6,8 +6,8 @@ describe 'loop_message_five_times' do
     message = "Hello World."
     expect { loop_message_five_times(message) }.to output(/Hello World.\n/).to_stdout
     expect { loop_message_five_times(message) }.to output(/Hello World.\nHello World.\nHello World.\nHello World.\nHello World./).to_stdout, "Expected the input message to be output five times using puts:\n\nHello World.\nHello World.\nHello World.\nHello World.\nHello World.\n"
-  end
 end
+end 
 
 describe 'loop_message_n_times' do
   it 'takes in a message and a number outputs the message that number of times' do
